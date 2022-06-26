@@ -19,7 +19,7 @@
   grid-template-columns: 1fr 1fr;
 
   &__left {
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 2fr 2fr;
     display: grid;
   }
 
@@ -28,28 +28,83 @@
     display: grid;
   }
 
+  &__cover {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    &--title {
+      border-bottom: 4px solid $text-color;
+      border-right: 4px solid $text-color;
+    }
+
+    &--cta {
+      border-right: 4px solid $text-color;
+    }
+
+    &--description {
+      border-bottom: 4px solid $text-color;
+    }
+
+    &--about-us {
+      border-top: 4px solid $text-color;
+    }
+  }
+
   &__title {
-    border-bottom: 4px solid $text-color;
-    border-right: 4px solid $text-color;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 3rem 5rem;
+    gap: 2rem;
+    width: $content-item-width;
 
     &__name {
-      font-size: 9rem;
+      font-size: $very-large-font-size;
       font-weight: bold;
+    }
+
+    &__podcast-btn {
+      font-size: $medium-font-size;
+      background: $accent-color;
+      padding: 1rem 2rem;
+      width: 245px;
+      color: white;
+      text-align: center;
     }
   }
 
   &__cta {
-    border-right: 4px solid $text-color;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    width: $content-item-width;
+    margin: auto;
+
+    &__item {
+      display: flex;
+      gap: 2rem;
+      font-size: $large-font-size;
+      align-items: center;
+    }
   }
 
   &__description {
-    border-bottom: 4px solid $text-color;
+    font-size: $large-font-size;
+    width: $content-item-width;
+    margin: auto;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
   }
 
   &__about-us {
-    border-top: 4px solid $text-color;
   }
 }
