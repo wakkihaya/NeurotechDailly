@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faPager,
+} from "@fortawesome/free-solid-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
@@ -43,7 +47,28 @@ const Home = () => {
             <img className="container__image" src="brain.png" alt="brain" />
           </div>
           <div className="container__cover container__cover--about-us">
-            <div className="container__about-us">NeurotechJP</div>
+            <div className="container__about-us">
+              <div className="container__about-us__description">
+                <div className="container__about-us__description__text">
+                  Supported by{" "}
+                  <img
+                    className="container__about-us__description__logo"
+                    src="logo.png"
+                    alt="logo"
+                  />
+                </div>
+                a neurotech interview media
+              </div>
+              <div className="container__about-us__sns">
+                Follow us on{" "}
+                <a href="https://neurotechjp.com">
+                  <FontAwesomeIcon icon={faPager} />
+                </a>
+                <a href="https://twitter.com/NeurotechJP_en">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
