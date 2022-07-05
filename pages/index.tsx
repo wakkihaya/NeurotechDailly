@@ -24,14 +24,24 @@ const Home = () => {
             <div className="container__cta">
               <div className="container__cta__item">
                 Apple Podcast{" "}
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                <FontAwesomeIcon
+                  className="container__cta__item__icon"
+                  icon={faArrowUpRightFromSquare}
+                />
               </div>
               <div className="container__cta__item">
                 Google Podcast{" "}
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                <FontAwesomeIcon
+                  className="container__cta__item__icon"
+                  icon={faArrowUpRightFromSquare}
+                />
               </div>
               <div className="container__cta__item">
-                Spotify <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                Spotify{" "}
+                <FontAwesomeIcon
+                  className="container__cta__item__icon"
+                  icon={faArrowUpRightFromSquare}
+                />
               </div>
             </div>
           </div>
@@ -61,10 +71,18 @@ const Home = () => {
               </div>
               <div className="container__about-us__sns">
                 Follow us on{" "}
-                <a href="https://neurotechjp.com">
+                <a
+                  href="https://neurotechjp.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faPager} />
                 </a>
-                <a href="https://twitter.com/NeurotechJP_en">
+                <a
+                  href="https://twitter.com/NeurotechJP_en"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </div>
