@@ -8,6 +8,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
     <div className="home">
+      <div className="header" />
       <div className="container">
         <div className="container__left">
           <div className="container__cover container__cover--title">
@@ -90,6 +91,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="footer" />
     </div>
   );
 };
