@@ -49,7 +49,6 @@ const HomeMobile: FC = () => {
           Stay up-to-date <br /> with the latest neurotech. <br /> neuroscience
           x technology
         </div>
-        "
       </div>
     </div>
   );
