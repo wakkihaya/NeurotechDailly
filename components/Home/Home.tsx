@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import type { FC } from "react";
+
 import { AboutUs } from "../AboutUs";
+import { CTA } from "../CTA";
 
 const Home: FC = () => {
   return (
@@ -21,29 +21,7 @@ const Home: FC = () => {
               </div>
             </div>
             <div className="container__cover container__cover--cta">
-              <div className="container__cta">
-                <div className="container__cta__item">
-                  Apple Podcast{" "}
-                  <FontAwesomeIcon
-                    className="container__cta__item__icon"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                </div>
-                <div className="container__cta__item">
-                  Google Podcast{" "}
-                  <FontAwesomeIcon
-                    className="container__cta__item__icon"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                </div>
-                <div className="container__cta__item">
-                  Spotify{" "}
-                  <FontAwesomeIcon
-                    className="container__cta__item__icon"
-                    icon={faArrowUpRightFromSquare}
-                  />
-                </div>
-              </div>
+              <CTA />
             </div>
           </div>
           <div className="container__right">

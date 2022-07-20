@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import type { FC } from "react";
 import { AboutUs } from "../AboutUs";
+import { CTA } from "../CTA";
 
 const HomeMobile: FC = () => {
   return (
@@ -16,29 +17,7 @@ const HomeMobile: FC = () => {
               Listen on Podcast
             </div>
           </div>
-          <div className="home-mobile__cta">
-            <div className="home-mobile__cta__item">
-              Apple Podcast{" "}
-              <FontAwesomeIcon
-                className="home-mobile__cta__item__icon"
-                icon={faArrowUpRightFromSquare}
-              />
-            </div>
-            <div className="home-mobile__cta__item">
-              Google Podcast{" "}
-              <FontAwesomeIcon
-                className="home-mobile__cta__item__icon"
-                icon={faArrowUpRightFromSquare}
-              />
-            </div>
-            <div className="home-mobile__cta__item">
-              Spotify{" "}
-              <FontAwesomeIcon
-                className="home-mobile__cta__item__icon"
-                icon={faArrowUpRightFromSquare}
-              />
-            </div>
-          </div>
+          <CTA />
         </div>
         <hr className="rounded" />
         <div className="home-mobile__description">

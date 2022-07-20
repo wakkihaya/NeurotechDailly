@@ -86,29 +86,6 @@
     }
   }
 
-  &__cta {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: flex-start;
-    width: $content-item-width;
-    margin: auto;
-
-    &__item {
-      display: flex;
-      gap: 2rem;
-      font-size: $large-font-size;
-      align-items: center;
-
-      &__icon {
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
   &__description {
     font-size: $large-font-size;
     width: $content-item-width;
@@ -171,29 +148,6 @@
     }
   }
 
-  &__cta {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: flex-start;
-    margin: auto;
-
-    &__item {
-      display: flex;
-      gap: 2rem;
-      font-size: $large-font-size;
-      align-items: center;
-
-      &__icon {
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
   &__description {
     font-size: $medium-font-size;
     width: $mobile-content-width;
@@ -252,5 +206,33 @@ hr.rounded {
         height: 30px;
       }
     }
+  }
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: $content-item-width;
+  margin: auto;
+
+  &__item {
+    display: flex;
+    gap: 2rem;
+    font-size: $large-font-size;
+    align-items: center;
+
+    &__icon {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    width: auto;
+    flex: 2;
   }
 }
