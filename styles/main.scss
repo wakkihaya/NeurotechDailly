@@ -125,7 +125,7 @@
 
   &__title {
     flex: 3;
-    width: $mobile-content-width;
+    max-width: $mobile-content-width;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -150,7 +150,7 @@
 
   &__description {
     font-size: $medium-font-size;
-    width: $mobile-content-width;
+    max-width: $mobile-content-width;
     margin: 6rem auto;
   }
 }
