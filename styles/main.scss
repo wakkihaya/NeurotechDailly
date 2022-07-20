@@ -102,6 +102,7 @@
 }
 
 .home-mobile {
+  font-family: $main-font;
   background: $accent-color;
   height: 100%;
   width: 100%;
@@ -125,7 +126,7 @@
 
   &__title {
     flex: 3;
-    width: $mobile-content-width;
+    max-width: $mobile-content-width;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -144,20 +145,21 @@
       color: white;
       text-align: center;
       cursor: pointer;
-      width: 245px;
+      width: 220px;
     }
   }
 
   &__description {
-    font-size: $medium-font-size;
-    width: $mobile-content-width;
-    margin: 6rem auto;
+    font-size: $small-font-size;
+    max-width: $mobile-content-width;
+    margin: 10rem auto;
   }
 }
 
-hr.rounded {
-  border-top: 1px solid $text-color;
-  border-radius: 5px;
+.divider {
+  width: 100%;
+  height: 1px;
+  background: $text-color;
 }
 
 .about-us {
@@ -234,5 +236,9 @@ hr.rounded {
   @media screen and (max-width: $mobile-width) {
     width: auto;
     flex: 2;
+
+    &__item {
+      font-size: $medium-font-size;
+    }
   }
 }
