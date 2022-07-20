@@ -19,7 +19,7 @@ const HomeMobile: FC = () => {
           </div>
           <CTA />
         </div>
-        <div className="rounded" />
+        <div className="divider" />
         <div className="home-mobile__description">
           Stay up-to-date with the latest neurotech. <br /> neuroscience x
           technology
