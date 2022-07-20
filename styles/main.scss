@@ -1,7 +1,7 @@
 @import "./variables";
 
 .home {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -70,17 +70,9 @@
     gap: 2rem;
     width: $content-item-width;
 
-    @media screen and (max-width: $mobile-width) {
-      width: auto;
-    }
-
     &__name {
       font-size: $very-large-font-size;
       font-weight: bold;
-
-      @media screen and (max-width: $mobile-width) {
-        font-size: $large-font-size;
-      }
     }
 
     &__podcast-btn {
@@ -91,29 +83,6 @@
       color: white;
       text-align: center;
       cursor: pointer;
-    }
-  }
-
-  &__cta {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: flex-start;
-    width: $content-item-width;
-    margin: auto;
-
-    &__item {
-      display: flex;
-      gap: 2rem;
-      font-size: $large-font-size;
-      align-items: center;
-
-      &__icon {
-        &:hover {
-          cursor: pointer;
-        }
-      }
     }
   }
 
@@ -130,36 +99,140 @@
     margin: auto;
     object-fit: cover;
   }
+}
 
-  &__about-us {
+.home-mobile {
+  background: $accent-color;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+
+  &__container {
+    width: 100%;
+    height: auto;
+    background: $content-bg-color;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: $content-item-width;
+    min-height: 100vh;
+  }
+
+  &__title {
+    flex: 3;
+    width: $mobile-content-width;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: center;
+
+    &__name {
+      font-size: $bit-large-font-size;
+      font-weight: bold;
+    }
+
+    &__podcast-btn {
+      font-size: $small-font-size;
+      background: $accent-color;
+      padding: 1rem 2rem;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      width: 245px;
+    }
+  }
+
+  &__description {
+    font-size: $medium-font-size;
+    width: $mobile-content-width;
+    margin: 6rem auto;
+  }
+}
+
+hr.rounded {
+  border-top: 1px solid $text-color;
+  border-radius: 5px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: $content-item-width;
+  margin: auto;
+
+  &__description {
+    font-size: $medium-font-size;
+
+    &__text {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    &__logo {
+      height: 50px;
+    }
+  }
+
+  &__sns {
+    font-size: $small-font-size;
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    width: auto;
+    background: $content-bg-heavy-color;
+    padding: 4rem 1rem 2rem 1rem;
 
     &__description {
-      font-size: $medium-font-size;
-
-      &__text {
-        display: flex;
-        gap: 20px;
-        align-items: flex-start;
-      }
+      font-size: $small-font-size;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
       &__logo {
-        height: 50px;
+        height: 30px;
       }
     }
+  }
+}
 
-    &__sns {
-      font-size: $small-font-size;
-      margin-left: auto;
-      display: flex;
-      gap: 10px;
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: $content-item-width;
+  margin: auto;
+
+  &__item {
+    display: flex;
+    gap: 2rem;
+    font-size: $large-font-size;
+    align-items: center;
+
+    &__icon {
+      &:hover {
+        cursor: pointer;
+      }
     }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    width: auto;
+    flex: 2;
   }
 }
