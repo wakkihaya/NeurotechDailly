@@ -149,7 +149,7 @@
   }
 
   &__description {
-    font-size: $medium-font-size;
+    font-size: $small-font-size;
     max-width: $mobile-content-width;
     margin: 6rem auto;
   }
@@ -234,5 +234,9 @@ hr.rounded {
   @media screen and (max-width: $mobile-width) {
     width: auto;
     flex: 2;
+
+    &__item {
+      font-size: $medium-font-size;
+    }
   }
 }
