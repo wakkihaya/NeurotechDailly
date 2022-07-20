@@ -1,10 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowUpRightFromSquare,
-  faPager,
-} from "@fortawesome/free-solid-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import type { FC } from "react";
+import { AboutUs } from "../AboutUs";
 
 const HomeMobile: FC = () => {
   return (
@@ -44,10 +41,12 @@ const HomeMobile: FC = () => {
           </div>
         </div>
         <hr className="rounded" />
-        {/* TODO: Somehow, not extended to over 100vh. */}
         <div className="home-mobile__description">
-          Stay up-to-date <br /> with the latest neurotech. <br /> neuroscience
-          x technology
+          Stay up-to-date with the latest neurotech. <br /> neuroscience x
+          technology
+        </div>
+        <div className="home-mobile__about-us">
+          <AboutUs />
         </div>
       </div>
     </div>
