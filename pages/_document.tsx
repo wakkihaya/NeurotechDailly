@@ -41,6 +41,15 @@ export default class MyDocument extends Document<WithNonceProp> {
             name="twitter:description"
             content="Neurotech Daily, a Podcast that interview the cutting-edge founders, developers, and innovators in the neurotech space."
           />
+          <meta
+            name="twitter:image"
+            content="https://neurotechdaily.com/ogp.jpg"
+          />
+          <meta
+            name="image"
+            property="og:image"
+            content="https://neurotechdaily.com/ogp.jpg"
+          />
         </Head>
         <body>
           <Main />
