@@ -23,7 +23,7 @@ export const AboutUs: FC = () => {
           <FontAwesomeIcon icon={faPager} />
         </a>
         <a
-          href="https://twitter.com/NeurotechJP_en"
+          href="https://twitter.com/NeurotechDaily"
           target="_blank"
           rel="noreferrer"
         >
