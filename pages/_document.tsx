@@ -36,7 +36,7 @@ export default class MyDocument extends Document<WithNonceProp> {
           <meta property="og:site_name" content="Neurotech Daily" />
           <meta property="og:url" content="https://neurotechdaily.com" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Neurotech Ddaily" />
+          <meta name="twitter:title" content="Neurotech Daily" />
           <meta
             name="twitter:description"
             content="Neurotech Daily, a Podcast that interview the cutting-edge founders, developers, and innovators in the neurotech space."
