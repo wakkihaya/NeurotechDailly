@@ -18,9 +18,9 @@ export const CTA: FC = () => {
           />
         </a>
       </div>
-      {/* <div className="cta__item">
+      <div className="cta__item">
         <a
-          href=""
+          href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy85YWUzOTg5OC9wb2RjYXN0L3Jzcw"
           target="_blank"
           rel="noreferrer"
         >
@@ -30,7 +30,7 @@ export const CTA: FC = () => {
             icon={faArrowUpRightFromSquare}
           />
         </a>
-      </div> */}
+      </div>
       <div className="cta__item">
         <a
           href="https://open.spotify.com/show/0EERdbG9Rl9iPhIpzEUiSH"
