@@ -16,7 +16,13 @@ const Home: FC = () => {
                   Neurotech <br /> Daily
                 </div>
                 <div className="container__title__podcast-btn">
-                  Listen on Podcast
+                  <a
+                    href="https://spotifyanchor-web.app.link/e/lhkeYnwx0sb"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    Listen on Podcast
+                  </a>
                 </div>
               </div>
             </div>

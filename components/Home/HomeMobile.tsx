@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import type { FC } from "react";
 import { AboutUs } from "../AboutUs";
 import { CTA } from "../CTA";
@@ -14,7 +12,13 @@ const HomeMobile: FC = () => {
               Neurotech <br /> Daily
             </div>
             <div className="home-mobile__title__podcast-btn">
-              Listen on Podcast
+              <a
+                href="https://spotifyanchor-web.app.link/e/lhkeYnwx0sb"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                Listen on Podcast
+              </a>
             </div>
           </div>
           <CTA />

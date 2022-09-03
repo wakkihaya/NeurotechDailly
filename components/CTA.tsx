@@ -6,25 +6,43 @@ export const CTA: FC = () => {
   return (
     <div className="cta">
       <div className="cta__item">
-        Apple Podcast{" "}
-        <FontAwesomeIcon
-          className="cta__item__icon"
-          icon={faArrowUpRightFromSquare}
-        />
+        <a
+          href="https://podcasts.apple.com/us/podcast/neurotech-daily/id1642505992"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Apple Podcast{" "}
+          <FontAwesomeIcon
+            className="cta__item__icon"
+            icon={faArrowUpRightFromSquare}
+          />
+        </a>
       </div>
+      {/* <div className="cta__item">
+        <a
+          href=""
+          target="_blank"
+          rel="noreferrer"
+        >
+          Google Podcast{" "}
+          <FontAwesomeIcon
+            className="cta__item__icon"
+            icon={faArrowUpRightFromSquare}
+          />
+        </a>
+      </div> */}
       <div className="cta__item">
-        Google Podcast{" "}
-        <FontAwesomeIcon
-          className="cta__item__icon"
-          icon={faArrowUpRightFromSquare}
-        />
-      </div>
-      <div className="cta__item">
-        Spotify{" "}
-        <FontAwesomeIcon
-          className="cta__item__icon"
-          icon={faArrowUpRightFromSquare}
-        />
+        <a
+          href="https://open.spotify.com/show/0EERdbG9Rl9iPhIpzEUiSH"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Spotify{" "}
+          <FontAwesomeIcon
+            className="cta__item__icon"
+            icon={faArrowUpRightFromSquare}
+          />
+        </a>
       </div>
     </div>
   );
